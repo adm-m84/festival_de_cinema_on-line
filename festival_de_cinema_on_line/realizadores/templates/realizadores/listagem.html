@@ -1,0 +1,6 @@
+<a href="{% url 'realizadores:inclusao' %}">Incluir</a>
+<br>
+{% for realizador in object_list %}
+  <a href="{% url 'realizadores:detalhamento' pk=realizador.id %}">{{ realizador.nome }}</a>
+  <br>
+{% endfor %}

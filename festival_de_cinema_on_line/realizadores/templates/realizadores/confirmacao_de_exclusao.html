@@ -1,0 +1,5 @@
+<form method="post">
+  {% csrf_token %}
+  Confirma exclusao de {{ object.nome }}?
+  <button type="submit">Confirmar</button>
+</form>
