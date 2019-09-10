@@ -1,0 +1,17 @@
+{{ object.nome }}
+<br>
+{{ object.data_de_nascimento }}
+<br>
+{{ object.sexo }}
+<br>
+{{ object.email }}
+<br>
+{{ object.funcao }}
+<br>
+{{ object.foto }}
+<br>
+<a href="{% url 'realizadores:exclusao' pk=object.id %}">Excluir</a>
+<br>
+<a href="{% url 'realizadores:edicao' pk=object.id %}">Editar</a>
+<br>
+<a href="">Gerar PDF</a>
